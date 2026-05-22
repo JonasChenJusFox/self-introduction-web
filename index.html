@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jonas Chen, NYU junior double majoring in Computer Science and Mathematics with a minor in Web Programming. Portfolio for software engineering roles"
+    />
+    <title>Jonas Chen | Software Engineering Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="paper-texture" aria-hidden="true"></div>
+    <div class="cursor-light" aria-hidden="true"></div>
+
+    <header class="site-header compact" data-reveal>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">中文</button>
+      </nav>
+      <a class="header-cta" href="https://github.com/JonasChenJusFox" target="_blank" rel="noreferrer">
+        GitHub
+      </a>
+      <details class="mobile-menu">
+        <summary aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+        <div class="mobile-menu-panel">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#work" data-i18n="nav.work">Work</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+          <a href="https://github.com/JonasChenJusFox" target="_blank" rel="noreferrer">GitHub</a>
+          <button class="lang-toggle mobile-lang-toggle" type="button" data-lang-toggle aria-label="Switch language">中文</button>
+        </div>
+      </details>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 id="hero-title" data-reveal data-i18n="hero.title">
+            Jonas Chen's personal website
+          </h1>
+          <p class="hero-copy" data-reveal data-i18n="hero.copy">
+            I am Jonas Chen (also known as Jiannan Chen), a 22-year-old NYU junior double majoring in
+            Computer Science and Mathematics, with a minor in Web Programming. I build full-stack
+            products that connect polished interfaces, reliable APIs, database-backed workflows, and
+            deployable cloud or containerized systems
+          </p>
+          <div class="hero-actions" data-reveal>
+            <a class="button primary" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
+            <a class="button secondary" href="#contact" data-i18n="hero.contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo" aria-hidden="true">
+            <img src="./data/cvphoto.jpg" alt="" width="3219" height="3220" />
+            <div class="photo-sheen"></div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Candidate highlights">
+            <span class="panel-rule"></span>
+            <p class="small-caps" data-i18n="profile.label">Profile</p>
+            <dl>
+              <div>
+                <dt data-i18n="profile.universityLabel">University</dt>
+                <dd data-i18n="profile.university">New York University</dd>
+              </div>
+              <div>
+                <dt data-i18n="profile.standingLabel">Standing</dt>
+                <dd data-i18n="profile.standing">Junior, 22</dd>
+              </div>
+              <div>
+                <dt data-i18n="profile.majorLabel">Major</dt>
+                <dd data-i18n="profile.major">Computer Science, Mathematics</dd>
+              </div>
+              <div>
+                <dt data-i18n="profile.minorsLabel">Minors</dt>
+                <dd data-i18n="profile.minors">Web Programming</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section" aria-labelledby="about-title">
+        <div class="section-label" data-reveal>
+          <span></span>
+          <p data-i18n="about.label">About</p>
+          <span></span>
+        </div>
+        <div class="about-grid">
+          <div data-reveal>
+            <h2 id="about-title" data-i18n="about.title">Full-Stack Software Engineer</h2>
+          </div>
+          <div class="about-copy" data-reveal>
+            <p data-i18n="about.copy1">
+              I focus on end-to-end product engineering: translating requirements into clear interfaces,
+              reliable backend services, thoughtful data models, and maintainable systems that can evolve
+              through real iteration
+            </p>
+            <p data-i18n="about.copy2">
+              I am currently preparing for software engineering internships and new-grad style roles
+              where I can contribute to full-stack product teams, developer tooling, and applied AI
+              systems
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="section-label" data-reveal>
+          <span></span>
+          <p data-i18n="projects.label">Main Maintained Projects</p>
+          <span></span>
+        </div>
+        <div class="projects-header" data-reveal>
+          <h2 id="projects-title" data-i18n="projects.title">Main projects I actively maintain and present</h2>
+          <p data-i18n="projects.copy">
+            These three projects best represent my internship experience, full-stack delivery, and
+            longer-term research-oriented software work
+          </p>
+        </div>
+        <div class="project-grid featured-project-grid">
+          <article class="project-card accent-card" data-reveal>
+            <div class="project-logo large kyg-logo" aria-hidden="true">
+              <img src="./data/kyg.svg" alt="" />
+            </div>
+            <p class="small-caps" data-i18n="projects.kyg.label">Website Development Internship · Private</p>
+            <h3>KYG machinery Ltd. web</h3>
+            <p data-i18n="projects.kyg.copy">Built an Astro and Cloudflare Workers company website, using D1/R2 for CMS data, product assets, bilingual catalog pages, and admin workflows</p>
+            <a href="https://github.com/AndyChen0513/kygmachinery-web" target="_blank" rel="noreferrer" data-i18n="projects.repository">
+              Repository
+            </a>
+          </article>
+          <article class="project-card accent-card" data-reveal>
+            <div class="project-logo large" aria-hidden="true">
+              <img src="./data/catch.png" alt="" />
+            </div>
+            <p class="small-caps" data-i18n="projects.catch.label">Python · Full Stack</p>
+            <h3>CatCh</h3>
+            <p data-i18n="projects.catch.copy">Built a Dockerized full-stack learning platform with FastAPI microservices, MongoDB persistence, and a React/Vite frontend</p>
+            <a href="https://github.com/JonasChenJusFox/CatCh" target="_blank" rel="noreferrer" data-i18n="projects.repository">Repository</a>
+          </article>
+          <article class="project-card accent-card" data-reveal>
+            <div class="project-logo large" aria-hidden="true">
+              <img src="./data/nearbite.svg" alt="" />
+            </div>
+            <p class="small-caps" data-i18n="projects.nearbite.label">Python · Private</p>
+            <h3>Nearbite</h3>
+            <p data-i18n="projects.nearbite.copy">Built a restaurant recommendation app with Streamlit, MongoDB, Yelp API integration, and embedding-based ranking for location-aware discovery</p>
+            <a href="https://github.com/JonasChenJusFox/nearbite" target="_blank" rel="noreferrer" data-i18n="projects.repository">Repository</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section timeline-section" aria-labelledby="work-title">
+        <div class="section-label" data-reveal>
+          <span></span>
+          <p data-i18n="timeline.label">Research & Coursework Timeline</p>
+          <span></span>
+        </div>
+        <div class="timeline-heading" data-reveal>
+          <h2 id="work-title" data-i18n="timeline.title">Recent Projects</h2>
+        </div>
+        <div class="timeline" aria-label="Project timeline">
+          <article class="timeline-item featured" data-reveal>
+            <div class="timeline-date" data-i18n="timeline.kyg.date">May 2025 - Aug 2025</div>
+            <div class="timeline-card">
+              <div class="project-logo kyg-logo" aria-hidden="true">
+                <img src="./data/kyg.svg" alt="" />
+              </div>
+              <p class="small-caps" data-i18n="timeline.kyg.label">Website Development Internship</p>
+              <h3>KYG machinery Ltd. web</h3>
+              <p data-i18n="timeline.kyg.copy">
+                A private website development internship project focused on production website delivery
+                and iterative business-facing implementation
+              </p>
+              <a href="https://github.com/AndyChen0513/kygmachinery-web" target="_blank" rel="noreferrer" data-i18n="timeline.openRepository">
+                Open repository
+              </a>
+            </div>
+          </article>
+          <article class="timeline-item featured" data-reveal>
+            <div class="timeline-date" data-i18n="timeline.nearbite.date">Jan 21 - May 1</div>
+            <div class="timeline-card">
+              <div class="project-logo" aria-hidden="true">
+                <img src="./data/nearbite.svg" alt="" />
+              </div>
+              <p class="small-caps" data-i18n="timeline.cho">Prof. Kyunghyun Cho</p>
+              <h3>Nearbite</h3>
+              <p data-i18n="timeline.nearbite.copy">
+                A long-running Python project focused on practical software delivery, iteration, and
+                research-style product thinking
+              </p>
+              <a href="https://github.com/JonasChenJusFox/nearbite" target="_blank" rel="noreferrer" data-i18n="timeline.openRepository">
+                Open repository
+              </a>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date" data-i18n="timeline.fitflow.date">Feb 12 - Mar 15</div>
+            <div class="timeline-card">
+              <div class="project-logo" aria-hidden="true">
+                <img src="./data/fitflowlogo.png" alt="" />
+              </div>
+              <p class="small-caps" data-i18n="timeline.amos">Prof. Amos Bloomberg</p>
+              <h3>Fitflow</h3>
+              <p data-i18n="timeline.fitflow.copy">
+                A web app exercise emphasizing product flow, frontend structure, and clear user-facing
+                behavior
+              </p>
+              <a href="https://github.com/JonasChenJusFox/fitflow" target="_blank" rel="noreferrer" data-i18n="timeline.openRepository">
+                Open repository
+              </a>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date" data-i18n="timeline.pypl.date">Mar 10 - Mar 31</div>
+            <div class="timeline-card">
+              <div class="project-logo" aria-hidden="true">
+                <img src="./data/pyplgame.png" alt="" />
+              </div>
+              <p class="small-caps" data-i18n="timeline.amos">Prof. Amos Bloomberg</p>
+              <h3>pypl-games</h3>
+              <p data-i18n="timeline.pypl.copy">
+                A Python packaging project focused on installable structure, maintainable modules, and
+                reusable game logic
+              </p>
+              <a href="https://github.com/JonasChenJusFox/pypl-games" target="_blank" rel="noreferrer" data-i18n="timeline.openRepository">
+                Open repository
+              </a>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date" data-i18n="timeline.signbridge.date">Apr 2 - Apr 16</div>
+            <div class="timeline-card">
+              <div class="project-logo" aria-hidden="true">
+                <img src="./data/signbridge.png" alt="" />
+              </div>
+              <p class="small-caps" data-i18n="timeline.amos">Prof. Amos Bloomberg</p>
+              <h3>SignBridge</h3>
+              <p data-i18n="timeline.signbridge.copy">
+                A containerized app exercise for packaging services, coordinating environments, and
+                making deployment assumptions explicit
+              </p>
+              <a href="https://github.com/JonasChenJusFox/SignBridge" target="_blank" rel="noreferrer" data-i18n="timeline.openRepository">
+                Open repository
+              </a>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date" data-i18n="timeline.catch.date">Apr 21 - May 7</div>
+            <div class="timeline-card">
+              <div class="project-logo" aria-hidden="true">
+                <img src="./data/catch.png" alt="" />
+              </div>
+              <p class="small-caps" data-i18n="timeline.amos">Prof. Amos Bloomberg</p>
+              <h3>CatCh</h3>
+              <p data-i18n="timeline.catch.copy">
+                A final software engineering project integrating backend services, frontend workflows,
+                and team-grade delivery
+              </p>
+              <a href="https://github.com/JonasChenJusFox/CatCh" target="_blank" rel="noreferrer" data-i18n="timeline.openRepository">
+                Open repository
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="contact-panel" data-reveal>
+          <p class="small-caps" data-i18n="contact.label">Open to Software Engineering Roles</p>
+          <h2 id="contact-title" data-i18n="contact.title">I am building toward product-minded engineering teams</h2>
+          <p data-i18n="contact.copy">
+            This portfolio is designed for recruiters, professors, and collaborators who want a quick
+            but substantive view of my technical direction
+          </p>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:jcphonenum@gmail.com" data-i18n="contact.email">Email Jonas</a>
+            <a class="button secondary" href="tel:+12018958874">+1 201 895 8874</a>
+            <a class="button secondary" href="https://github.com/JonasChenJusFox" target="_blank" rel="noreferrer" data-i18n="contact.github">
+              View GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.copy">© 2026 Jonas Chen</p>
+      <a href="#top" data-i18n="footer.backTop">Back to top</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
