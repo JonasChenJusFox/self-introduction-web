@@ -20,7 +20,6 @@ Open `index.html` directly in a browser. No build step is required.
 The `data` directory contains the portfolio images:
 
 - `cvphoto.jpg` powers the standalone homepage hero portrait.
-- `self.JPG` is kept as an alternate personal photo asset.
 - Project logos are stored in `data` and used on both timeline and project cards.
 
 ## Contact
