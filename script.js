@@ -3,6 +3,7 @@ const revealElements = Array.from(document.querySelectorAll("[data-reveal]"));
 const heroPhoto = document.querySelector(".hero-photo");
 const langToggleButtons = Array.from(document.querySelectorAll("[data-lang-toggle]"));
 const i18nElements = Array.from(document.querySelectorAll("[data-i18n]"));
+const phoneLinks = Array.from(document.querySelectorAll("[data-phone-link]"));
 
 const translations = {
   en: {
@@ -73,6 +74,8 @@ const translations = {
     "contact.copy":
       "This portfolio is designed for recruiters, professors, and collaborators who want a quick but substantive view of my technical direction",
     "contact.email": "Email Jonas",
+    "contact.phone": "+1 201 895 8874",
+    "contact.phoneHref": "tel:+12018958874",
     "contact.github": "View GitHub",
     "footer.copy": "© 2026 Jonas Chen",
     "footer.backTop": "Back to top",
@@ -140,6 +143,8 @@ const translations = {
     "contact.title": "如果有兴趣了解我或者有任何问题，欢迎联系我！",
     "contact.copy": "这个作品集面向招聘者、教授和合作者，用于快速了解我的技术方向与项目能力",
     "contact.email": "邮件联系",
+    "contact.phone": "(+86) 17688518535",
+    "contact.phoneHref": "tel:+8617688518535",
     "contact.github": "查看 GitHub",
     "footer.copy": "© 2026 Jonas Chen",
     "footer.backTop": "回到顶部",
@@ -167,6 +172,10 @@ const setLanguage = (language) => {
   document
     .querySelector("meta[name='description']")
     ?.setAttribute("content", translations[activeLanguage]["meta.description"]);
+
+  phoneLinks.forEach((link) => {
+    link.setAttribute("href", translations[activeLanguage]["contact.phoneHref"]);
+  });
 
   langToggleButtons.forEach((button) => {
     button.textContent = activeLanguage === "zh" ? "EN" : "中文";
