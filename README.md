@@ -1,7 +1,5 @@
 # Jonas Chen Portfolio
 
-A recruiting-focused personal introduction website for Jonas Chen, an NYU junior majoring in Computer Science with minors in Web Programming and Mathematics.
-
 ## Project Links
 
 - [KYG machinery Ltd. web](https://github.com/AndyChen0513/kygmachinery-web) — Website development internship, May 2025 to August 2025
@@ -14,13 +12,6 @@ A recruiting-focused personal introduction website for Jonas Chen, an NYU junior
 ## Preview
 
 Open `index.html` directly in a browser. No build step is required.
-
-## Photo
-
-The `data` directory contains the portfolio images:
-
-- `cvphoto.jpg` powers the standalone homepage hero portrait.
-- Project logos are stored in `data` and used on both timeline and project cards.
 
 ## Contact
 
