@@ -15,6 +15,7 @@ const translations = {
     "hero.copy":
       "I am Jonas Chen (also known as Jiannan Chen), a 22-year-old NYU junior double majoring in Computer Science and Mathematics, with a minor in Web Programming. I build full-stack products that connect polished interfaces, reliable APIs, database-backed workflows, and deployable cloud or containerized systems",
     "hero.viewProjects": "View Projects",
+    "hero.resume": "Resume",
     "hero.contact": "Contact",
     "profile.label": "Profile",
     "profile.universityLabel": "University",
@@ -95,6 +96,7 @@ const translations = {
     "hero.copy":
       "我是陈见南（Jonas Chen），22 岁，目前是纽约大学大三学生，双专业为计算机科学与数学，辅修网页编程。我专注于全栈产品开发，将清晰的交互界面、可靠的 API、数据库驱动的业务流程，以及可部署的云端或容器化系统连接起来",
     "hero.viewProjects": "查看项目",
+    "hero.resume": "简历",
     "hero.contact": "联系我",
     "profile.label": "个人信息",
     "profile.universityLabel": "学校",
