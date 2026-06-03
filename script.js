@@ -91,7 +91,7 @@ const translations = {
     "nav.work": "经历",
     "nav.projects": "项目",
     "nav.contact": "联系",
-    "hero.title": "陈见南的个人网站",
+    "hero.title": "陈见南",
     "hero.copy":
       "我是陈见南（Jonas Chen），22 岁，目前是纽约大学大三学生，双专业为计算机科学与数学，辅修网页编程。我专注于全栈产品开发，将清晰的交互界面、可靠的 API、数据库驱动的业务流程，以及可部署的云端或容器化系统连接起来",
     "hero.viewProjects": "查看项目",
