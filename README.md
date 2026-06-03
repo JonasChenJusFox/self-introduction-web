@@ -1,6 +1,7 @@
 # Jonas Chen Portfolio
 
 ## Project Links
+- [main](http://jonaschen.io/)
 
 - [KYG machinery Ltd. web](https://github.com/AndyChen0513/kygmachinery-web) — Website development internship, May 2025 to August 2025
 - [Nearbite](https://github.com/JonasChenJusFox/nearbite) — Prof. Kyunghyun Cho, Jan 21 to May 1
