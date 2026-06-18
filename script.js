@@ -4,6 +4,7 @@ const heroPhoto = document.querySelector(".hero-photo");
 const langToggleButtons = Array.from(document.querySelectorAll("[data-lang-toggle]"));
 const i18nElements = Array.from(document.querySelectorAll("[data-i18n]"));
 const phoneLinks = Array.from(document.querySelectorAll("[data-phone-link]"));
+const resumeLinks = Array.from(document.querySelectorAll("[data-resume-link]"));
 
 const translations = {
   en: {
@@ -183,6 +184,13 @@ const setLanguage = (language) => {
 
   phoneLinks.forEach((link) => {
     link.setAttribute("href", translations[activeLanguage]["contact.phoneHref"]);
+  });
+
+  resumeLinks.forEach((link) => {
+    link.setAttribute(
+      "href",
+      activeLanguage === "zh" ? "./data/jiannanchen_cv.pdf" : "./data/jc_e_resume.pdf"
+    );
   });
 
   langToggleButtons.forEach((button) => {
