@@ -62,7 +62,7 @@
           </p>
           <div class="hero-actions" data-reveal>
             <a class="button primary" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
-            <a class="button secondary" href="./data/jc_e_resume.pdf" target="_blank" rel="noreferrer" data-i18n="hero.resume" data-resume-link>Resume</a>
+            <a class="button secondary" href="./data/jc_cv.pdf" target="_blank" rel="noreferrer" data-i18n="hero.resume" data-resume-link>Resume</a>
             <a class="button secondary" href="#contact" data-i18n="hero.contact">Contact</a>
           </div>
         </div>
@@ -132,10 +132,19 @@
         <div class="projects-header" data-reveal>
           <h2 id="projects-title" data-i18n="projects.title">Main projects</h2>
           <p data-i18n="projects.copy">
-             Main projects I actively maintain and present. These three projects fully demonstrate my practical ability in applying technologies such as Cloudflare, DigitalOcean, Docker, MongoDB, FastAPI, and React/Vite to complete full-stack development, service integration, and production-level deployment.
+             Main systems I actively maintain and present. These projects demonstrate practical ability across applied AI, Cloudflare Workers, Docker, MongoDB, FastAPI, React/Vite, service integration, and production-oriented deployment.
           </p>
         </div>
         <div class="project-grid featured-project-grid">
+          <article class="project-card accent-card" data-reveal>
+            <div class="project-logo large aither-logo" aria-hidden="true">AI</div>
+            <p class="small-caps" data-i18n="projects.aither.label">Cloudflare Workers AI Assistant Agent Platform</p>
+            <h3>AitherPath AI Assistant Agent</h3>
+            <p data-i18n="projects.aither.copy">Building a serverless agent platform for job search, email automation, calendar scheduling, contact retrieval, persistent memory, and multi-step workflows</p>
+            <a href="https://github.com/JonasChenJusFox/AitherPath-CloudflareAI" target="_blank" rel="noreferrer" data-i18n="projects.repository">
+              Repository
+            </a>
+          </article>
           <article class="project-card accent-card" data-reveal>
             <div class="project-logo large kyg-logo" aria-hidden="true">
               <img src="./data/kyg.svg" alt="" />
@@ -168,6 +177,124 @@
         </div>
       </section>
 
+      <section id="aitherpath" class="section case-study-section" aria-labelledby="aitherpath-title">
+        <div class="section-label" data-reveal>
+          <span></span>
+          <p data-i18n="aither.label">Featured AI Engineering Project</p>
+          <span></span>
+        </div>
+        <article class="case-study" data-reveal>
+          <header class="case-study-hero">
+            <div>
+              <p class="small-caps" data-i18n="aither.kicker">Cloudflare Workers · AI Agents · Google Workspace</p>
+              <h2 id="aitherpath-title">AitherPath AI Assistant Agent</h2>
+            </div>
+            <a class="button secondary" href="https://github.com/JonasChenJusFox/AitherPath-CloudflareAI" target="_blank" rel="noreferrer" data-i18n="aither.repository">View repository</a>
+          </header>
+
+          <div class="case-study-block">
+            <p data-i18n="aither.overview1">
+              AitherPath is an AI assistant agent platform designed around the work people actually delegate: finding job opportunities, drafting and organizing email, scheduling calendar events, retrieving contacts, and carrying context across multi-step productivity workflows.
+            </p>
+            <p data-i18n="aither.overview2">
+              The project exists to explore how agentic software can move beyond single-turn chat interfaces into reliable, tool-using systems. The engineering problem is not only model quality; it is authentication, state, execution boundaries, memory, recoverability, and the contract between natural language and deterministic APIs.
+            </p>
+            <p data-i18n="aither.overview3">
+              Cloudflare Workers is the architectural center because the assistant needs low-latency request handling, global execution, narrow deployment units, and managed primitives for data, object storage, sessions, and workflows. The platform is being shaped as an edge-native agent runtime rather than a monolithic backend.
+            </p>
+          </div>
+
+          <div class="case-study-block">
+            <h3 data-i18n="aither.features.title">Key Features</h3>
+            <div class="feature-card-grid">
+              <div class="feature-card"><h4 data-i18n="aither.feature.tool.title">AI Tool Calling</h4><p data-i18n="aither.feature.tool.copy">A tool router translates assistant intent into typed API actions with explicit inputs, outputs, and failure states.</p></div>
+              <div class="feature-card"><h4 data-i18n="aither.feature.workspace.title">Google Workspace Integration</h4><p data-i18n="aither.feature.workspace.copy">OAuth-backed access to Gmail, Calendar, and Contacts enables the assistant to operate on real productivity data.</p></div>
+              <div class="feature-card"><h4 data-i18n="aither.feature.memory.title">Persistent Memory</h4><p data-i18n="aither.feature.memory.copy">D1 and session storage preserve user preferences, task context, and workflow state across requests.</p></div>
+              <div class="feature-card"><h4 data-i18n="aither.feature.serverless.title">Serverless Architecture</h4><p data-i18n="aither.feature.serverless.copy">Cloudflare Workers keep the execution surface small, deployable, and close to users without operating servers.</p></div>
+              <div class="feature-card"><h4 data-i18n="aither.feature.workflow.title">Workflow Automation</h4><p data-i18n="aither.feature.workflow.copy">Cloudflare Workflows provide a path for durable, multi-step jobs that survive retries and external API delays.</p></div>
+              <div class="feature-card"><h4 data-i18n="aither.feature.oauth.title">OAuth Authentication</h4><p data-i18n="aither.feature.oauth.copy">Scoped OAuth 2.0 authorization keeps Google API access explicit, revocable, and separated from assistant prompts.</p></div>
+              <div class="feature-card"><h4 data-i18n="aither.feature.sessions.title">Agent Sessions</h4><p data-i18n="aither.feature.sessions.copy">Cloudflare Agent Sessions are used to model conversational continuity without assuming a stateful server process.</p></div>
+              <div class="feature-card"><h4 data-i18n="aither.feature.job.title">Job Search</h4><p data-i18n="aither.feature.job.copy">The assistant is designed to coordinate search, ranking, saved context, and follow-up actions for applications.</p></div>
+              <div class="feature-card"><h4 data-i18n="aither.feature.email.title">Email Automation</h4><p data-i18n="aither.feature.email.copy">Gmail tools support reading, drafting, classifying, and preparing user-approved outbound communication.</p></div>
+              <div class="feature-card"><h4 data-i18n="aither.feature.calendar.title">Calendar Scheduling</h4><p data-i18n="aither.feature.calendar.copy">Calendar tools reason over availability and event creation while preserving clear human confirmation points.</p></div>
+            </div>
+          </div>
+
+          <div class="case-study-block">
+            <h3 data-i18n="aither.arch.title">System Architecture</h3>
+            <div class="architecture-flow" aria-label="AitherPath system architecture">
+              <span data-i18n="aither.arch.frontend">Frontend</span>
+              <span data-i18n="aither.arch.workers">Cloudflare Workers</span>
+              <span data-i18n="aither.arch.agent">AI Agent Layer</span>
+              <span data-i18n="aither.arch.router">Tool Router</span>
+              <span data-i18n="aither.arch.google">Google APIs</span>
+              <span data-i18n="aither.arch.openai">OpenAI</span>
+              <span data-i18n="aither.arch.database">Database</span>
+              <span data-i18n="aither.arch.memory">Persistent Memory</span>
+            </div>
+            <p data-i18n="aither.arch.copy">
+              The frontend captures user intent and confirmation decisions. Cloudflare Workers expose Hono-based REST endpoints, validate requests, and coordinate execution. The AI agent layer plans the next action, while the tool router isolates model output from privileged API calls. Google APIs provide Gmail, Calendar, and Contacts capabilities; OpenAI supplies reasoning and language generation; D1, R2, sessions, and workflow state persist the data needed for continuity.
+            </p>
+          </div>
+
+          <div class="case-study-block split-block">
+            <div>
+              <h3 data-i18n="aither.challenges.title">Engineering Challenges</h3>
+              <ul class="engineering-list">
+                <li data-i18n="aither.challenge.oauth">OAuth security requires scoped tokens, consent boundaries, refresh-token handling, and clear separation between credentials and prompts.</li>
+                <li data-i18n="aither.challenge.tools">Tool orchestration requires typed contracts so model-generated plans become deterministic API calls instead of informal text.</li>
+                <li data-i18n="aither.challenge.workflows">Multi-step workflows need durable checkpoints, retry behavior, and explicit recovery paths when Google or model calls fail.</li>
+                <li data-i18n="aither.challenge.memory">Agent memory must distinguish stable user preferences from short-lived task state and auditable execution logs.</li>
+                <li data-i18n="aither.challenge.serverless">Stateless serverless execution pushes state into sessions, D1, R2, and workflow records rather than process memory.</li>
+                <li data-i18n="aither.challenge.abstraction">API abstraction keeps Gmail, Calendar, Contacts, and job-search tools behind a consistent interface for authorization, validation, and error handling.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 data-i18n="aither.stack.title">Tech Stack</h3>
+              <div class="stack-grid">
+                <p><strong data-i18n="aither.stack.programming">Programming</strong><span>TypeScript, REST APIs</span></p>
+                <p><strong data-i18n="aither.stack.ai">AI</strong><span>OpenAI API, tool calling, agent planning</span></p>
+                <p><strong data-i18n="aither.stack.backend">Backend</strong><span>Hono, Cloudflare Workers</span></p>
+                <p><strong data-i18n="aither.stack.cloud">Cloud</strong><span>Cloudflare R2, Agent Sessions, Workflows</span></p>
+                <p><strong data-i18n="aither.stack.database">Database</strong><span>Cloudflare D1, persistent memory schema</span></p>
+                <p><strong data-i18n="aither.stack.auth">Authentication</strong><span>OAuth 2.0, Google APIs</span></p>
+                <p><strong data-i18n="aither.stack.devops">DevOps</strong><span>GitHub Actions, CI/CD</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study-block split-block">
+            <div>
+              <h3 data-i18n="aither.roadmap.title">Future Roadmap</h3>
+              <ul class="roadmap-list">
+                <li data-i18n="aither.roadmap.multiagent">Multi-agent collaboration for specialized planning, email, scheduling, and research roles.</li>
+                <li data-i18n="aither.roadmap.rag">RAG over user documents, interaction history, and task artifacts.</li>
+                <li data-i18n="aither.roadmap.vector">Vector database integration for semantic memory retrieval.</li>
+                <li data-i18n="aither.roadmap.memory">Long-term memory with user-controlled retention and deletion policies.</li>
+                <li data-i18n="aither.roadmap.streaming">Streaming responses for transparent intermediate reasoning and progress updates.</li>
+                <li data-i18n="aither.roadmap.eval">Evaluation framework for tool accuracy, regression testing, and workflow completion quality.</li>
+                <li data-i18n="aither.roadmap.observability">Observability, monitoring, structured logs, traces, and production alerting.</li>
+                <li data-i18n="aither.roadmap.deploy">Production deployment hardening, secret management, and environment promotion.</li>
+                <li data-i18n="aither.roadmap.kubernetes">Kubernetes as a future option for workloads that outgrow edge-only execution.</li>
+                <li data-i18n="aither.roadmap.mcp">MCP and Model Context Protocol integration for a broader tool ecosystem.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 data-i18n="aither.lessons.title">Lessons Learned</h3>
+              <p data-i18n="aither.lessons.copy1">
+                Building useful AI software is primarily a systems problem. The model is one component in a larger execution environment that must manage trust, state, retries, observability, and user confirmation.
+              </p>
+              <p data-i18n="aither.lessons.copy2">
+                Serverless architecture forces discipline. Because no request can rely on process-local memory, the design has to make state transitions explicit, serializable, and recoverable.
+              </p>
+              <p data-i18n="aither.lessons.copy3">
+                Real API integrations are where agent abstractions become concrete. Gmail, Calendar, Contacts, OAuth, and workflow orchestration expose the boundary between fluent language interfaces and production software engineering.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
       <section id="work" class="section timeline-section" aria-labelledby="work-title">
         <div class="section-label" data-reveal>
           <span></span>
@@ -178,6 +305,20 @@
           <h2 id="work-title" data-i18n="timeline.title">Recent Projects</h2>
         </div>
         <div class="timeline" aria-label="Project timeline">
+          <article class="timeline-item featured" data-reveal>
+            <div class="timeline-date" data-i18n="timeline.aither.date">Jun 18 - Present</div>
+            <div class="timeline-card">
+              <div class="project-logo aither-logo" aria-hidden="true">AI</div>
+              <p class="small-caps" data-i18n="timeline.aither.label">Cloudflare Workers AI Assistant Agent Platform</p>
+              <h3>AitherPath AI Assistant Agent</h3>
+              <p data-i18n="timeline.aither.copy">
+                A production-oriented AI agent platform for Google Workspace automation, persistent memory, and multi-step assistant workflows
+              </p>
+              <a href="https://github.com/JonasChenJusFox/AitherPath-CloudflareAI" target="_blank" rel="noreferrer" data-i18n="timeline.openRepository">
+                Open repository
+              </a>
+            </div>
+          </article>
           <article class="timeline-item featured" data-reveal>
             <div class="timeline-date" data-i18n="timeline.kyg.date">May 2025 - Aug 2025</div>
             <div class="timeline-card">
