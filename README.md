@@ -16,4 +16,4 @@ Open `index.html` directly in a browser. No build step is required.
 
 ## Contact
 
-The contact section links to `jcphonenum@gmail.com` and `+1 201 895 8874`.
+The contact section links to `jonas@jonaschen.io` and `+1 201 895 8874`.

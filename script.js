@@ -339,7 +339,7 @@ const setLanguage = (language) => {
   resumeLinks.forEach((link) => {
     link.setAttribute(
       "href",
-      activeLanguage === "zh" ? "./data/jiannanchen_cv.pdf" : "./data/jc_cv.pdf"
+      activeLanguage === "zh" ? "./data/jc_c_cv.pdf" : "./data/jc_e_cv.pdf"
     );
   });
 
