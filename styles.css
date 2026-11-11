@@ -782,8 +782,7 @@ h3 {
   align-items: start;
 }
 
-.engineering-list,
-.roadmap-list {
+.engineering-list {
   display: grid;
   gap: 0.72rem;
   margin: 1rem 0 0;
@@ -791,15 +790,13 @@ h3 {
   list-style: none;
 }
 
-.engineering-list li,
-.roadmap-list li {
+.engineering-list li {
   position: relative;
   padding-left: 1.15rem;
   color: var(--muted-foreground);
 }
 
-.engineering-list li::before,
-.roadmap-list li::before {
+.engineering-list li::before {
   position: absolute;
   left: 0;
   top: 0.72em;
